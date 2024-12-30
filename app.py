@@ -1,9 +1,9 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-@app.route("/website")
+@app.route("/")
 def website():
-    return render_template("website.html")
+    return render_template("index.html")
 
 @app.route("/membership")
 def membership():
